@@ -31,3 +31,19 @@ void heapSort(std::vector<int>& arr) {
         heapify(arr, i, 0);
     }
 }
+
+int main() {
+    std::vector<int> data = {12, 11, 13, 5, 6, 7};
+
+    std::cout << "Original array: ";
+    for (int i : data) std::cout << i << " ";
+    
+    heapSort(data);
+
+    std::cout << "\nSorted array:   ";
+    for (int i : data) std::cout << i << " ";
+    std::cout << std::endl;
+
+    return 0;
+}
+
