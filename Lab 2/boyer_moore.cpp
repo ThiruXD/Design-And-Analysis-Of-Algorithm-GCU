@@ -26,3 +26,13 @@ void search(const string& txt, const string& pat) {
         } else s += max(1, j - badchar[(int)txt[s + j]]);
     }
 }
+
+int main() {
+    string txt = "ABAAABCDABC";
+    string pat = "ABC";
+    
+    cout << "Searching for pattern '" << pat << "' in text '" << txt << "':" << endl;
+    search(txt, pat);
+    
+    return 0;
+}
